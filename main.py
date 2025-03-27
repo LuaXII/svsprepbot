@@ -9,6 +9,8 @@ load_dotenv()
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 MONGO_URI = os.getenv("MONGO_URI")
 
+if not BOT_TOKEN:
+    print("Error: BOT_TOKEN is missing in the .env file")
 
 # ✅ Enable required intents
 intents = nextcord.Intents.default()
