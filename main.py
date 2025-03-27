@@ -1,9 +1,9 @@
 import nextcord
 from nextcord.ext import commands
 from dotenv import load_dotenv
-from dotenv import load_dotenv
 import os
 
+# Load environment variables
 load_dotenv()
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
